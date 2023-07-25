@@ -15,13 +15,13 @@
                             <tr>
                                 <th>No</th>
                                 <th>Klub</th>
-                                <!-- <th>Ma</th>
+                                <th>Ma</th>
                                 <th>Me</th>
                                 <th>S</th>
                                 <th>K</th>
                                 <th>GM</th>
                                 <th>GK</th>
-                                <th>Point</th> -->
+                                <th>Point</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,7 +33,7 @@
                                 <td>
                                     {{$club->name}}
                                 </td>
-                                <!-- <td>
+                                <td>
                                     {{ $club->match_count }}
                                 </td>
                                 <td>
@@ -53,7 +53,7 @@
                                 </td>
                                 <td>
                                     {{ $club->point_count }}
-                                </td> -->
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>

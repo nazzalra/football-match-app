@@ -37,6 +37,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('clubs.create') }}">{{ __('Data Klub') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('matches.create') }}">{{ __('Pertandingan') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

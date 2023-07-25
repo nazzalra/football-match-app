@@ -12,7 +12,9 @@ class ClassementController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $clubs = Club::all();
+        $clubs = Club::all()
+            ->sortByDesc('goal_difference')
+            ->sortByDesc('point_count');
         return view('classement.index', compact('clubs'));
     }
 }

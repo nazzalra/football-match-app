@@ -29,6 +29,7 @@ class Clubs extends Component
     {
         $validated = $this->validate();
         Club::create($validated);
+        return redirect()->route('classement');
     }
 
     public function updated($propertyName)
