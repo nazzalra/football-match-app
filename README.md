@@ -15,6 +15,10 @@ Switch to the repo folder
 Install all the dependencies using composer
 
     composer install
+    
+Install node dependencies using npm
+
+    npm install
 
 Copy the example env file and make the required configuration changes in the .env file
 
@@ -27,6 +31,11 @@ Generate a new application key
 Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate --seed
+
+Start Vite Dev Server or Build Asset
+
+    npm run dev
+    npm run build
 
 Start the local development server
 
