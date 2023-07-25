@@ -13,6 +13,7 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    @livewireStyles
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -32,6 +33,9 @@
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('classement') }}">{{ __('Klasemen') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('clubs.create') }}">{{ __('Data Klub') }}</a>
                         </li>
                     </ul>
 
@@ -78,5 +82,6 @@
             @yield('content')
         </main>
     </div>
+    @livewireScripts
 </body>
 </html>

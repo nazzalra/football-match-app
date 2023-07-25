@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ClassementController;
+use App\Http\Controllers\ClubController;
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/', '/classement');
 
 Route::get('/classement', ClassementController::class)->name('classement');
+
+Route::get('clubs/create', [ClubController::class, 'create'])->name('clubs.create');
